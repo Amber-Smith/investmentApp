@@ -1,0 +1,21 @@
+<ion-content padding>
+      <ion-header no-border>
+          <ion-toolbar> 
+            <ion-title color = "light">Results</ion-title>
+            
+              <!-- Close Button -->
+              <ion-button slot= "primary" fill = "clear" color = "light" (click)="closeModal()">Close</ion-button>
+      
+            </ion-toolbar>
+      </ion-header>
+    
+    <ion-card color = "light" padding>
+        <ion-card-content text-left>
+          If you invest ${{modalInvestment}} with a {{modalRate}} percent annual rate, you have to invest 
+          at least {{modalYears}} years to reach the target college fund. Your future investment value 
+          will be ${{modalBalance}}.
+            
+        </ion-card-content>
+    </ion-card>
+    
+</ion-content>

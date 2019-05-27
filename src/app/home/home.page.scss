@@ -1,1 +1,40 @@
 
+ion-content{
+    --ion-background-color:#ADD8E6;
+  
+}
+
+ion-img{
+    --style: "center";
+    --width:="215";
+    --height:"215";
+    --position:"absolute";
+}
+
+.paddingFix{
+    padding:45px;
+}
+
+ion-text{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+ion-button{
+    outline-color: white;
+
+}
+
+.paddingButton{
+    position: absolute;
+    bottom: 15%;  
+    
+}
+
+.centerButton{
+    margin-left: auto;
+    margin-right:auto;
+    //width: 100%;
+    width: 20em;
+}

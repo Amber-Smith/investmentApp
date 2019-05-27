@@ -1,0 +1,20 @@
+ion-content{
+    --ion-background-color:#ADD8E6;
+  
+}
+
+ion-toolbar{
+    --background:transparent;
+    --position: "center";
+}
+
+ion-item {
+    --border-color: var(--ion-color-light,#ffffff);
+    margin: 5em 0;
+}
+
+ion-label{
+    font-size: 100px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}

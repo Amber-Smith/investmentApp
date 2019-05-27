@@ -1,14 +1,14 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content padding>
+  <ion-grid>
+    <ion-row class = "paddingFix">
+      <ion-img src = "/assets/img/collegeInvestment.png" ></ion-img>
+      <ion-text color = "light">collegeInvesto</ion-text>
+  </ion-row>
+</ion-grid>
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+<ion-row class = "paddingButton" >
+  <ion-col class = "centerButton">
+    <ion-button (click) = "goToInvestQuestion()" shape="round" fill="outline" color = "light" size = "large" expand = "block" >Get Started!</ion-button>
+  </ion-col>
+</ion-row>
 </ion-content>

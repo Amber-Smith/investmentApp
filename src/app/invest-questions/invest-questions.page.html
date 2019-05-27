@@ -1,0 +1,40 @@
+<ion-content>
+
+    <ion-header no-border>
+        <ion-toolbar> 
+  
+            <!-- Home Button -->
+            <ion-buttons slot="primary" (click) = "goToHomePage()">
+              <ion-button color="light">
+                <ion-icon slot="icon-only" name="home"></ion-icon>
+              </ion-button>
+            </ion-buttons>
+  
+          </ion-toolbar>
+    </ion-header>
+
+    <!-- Questions for Investment -->
+    <ion-item>
+        <ion-label color = "light" position="stacked">Enter the initial investment amount:</ion-label>
+        <ion-input clearInput required type = "number" id = "input" [(ngModel)] = "initial_investment" color = "light"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label color = "light" position="stacked">Enter the amount of target college fund:</ion-label>
+        <ion-input clearInput required type = "number" id = "input" [(ngModel)]= "target_amount" color = "light"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label color = "light" position="stacked">Enter the projected annual return rate(in %):</ion-label>
+        <ion-input clearInput required type = "number" id = "input" [(ngModel)]= "annual_rate" color = "light"></ion-input>
+    </ion-item>
+
+    <!-- Calcuate Button  -->
+    <ion-row>
+      <ion-col text-center>
+        <ion-button (click) = "openModal()" shape="round" fill="outline" color = "light" size = "large" >Calculate!</ion-button>
+        <p *ngIf="dataReturned">{{dataReturned}}</p>
+      </ion-col>
+    </ion-row> 
+
+</ion-content>
